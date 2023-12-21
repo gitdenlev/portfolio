@@ -1,0 +1,7 @@
+@mixin header__links {
+  color: $links-color;
+  text-align: center;
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 26px;
+}

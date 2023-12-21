@@ -1,0 +1,58 @@
+/* RightSidebarMenu.css */
+
+/* Стили для бокового меню */
+.bm-burger-button {
+    position: fixed;
+    width: 36px;
+    height: 30px;
+    right: 36px;
+    top: 36px;
+  }
+  
+  .bm-burger-bars {
+    background: #373a47;
+    
+
+  }
+  
+  /* Стили для пунктов меню */
+  .menu-item {
+    display: block;
+    padding: 10px;
+    color: #b8b7ad;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    
+  }
+  
+  .menu-item:hover {
+    color: #fff;
+  }
+  
+  /* Стили для бокового меню */
+  .bm-menu {
+    background: #373a47;
+    padding: 2.5em 1.5em 0;
+  }
+  
+  .bm-overlay {
+    background: rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Плавное выезжание */
+  .bm-menu-wrap {
+    position: fixed;
+    margin-top: 6px;
+    height: 100%;
+    transition: transform 0.3s;
+  }
+  
+  .bm-menu-wrap .bm-menu {
+    height: 100%;
+  }
+  
+  /* Фикс для бага с высотой контейнера */
+  .bm-menu-wrap > div {
+    height: 100%;
+  }
+  
