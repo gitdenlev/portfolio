@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { FaAngleDown } from "react-icons/fa";
 import htmlIcon from "../assets/svg/html.svg";
 import cssIcon from "../assets/svg/css.svg";
 import scssIcon from "../assets/svg/scss.svg";
@@ -25,51 +24,60 @@ const StackList = styled.ul`
   margin-top: 20px;
   justify-content: center;
   align-items: center;
+
+  @media screen and (min-width: 768px) {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 80px;
+    grid-row-gap: 20px;
+  }
+
+  @media screen and (min-width: 600px) and (max-width: 767px) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
 `;
 
-const StackItem = styled.li``;
 
 const StackTitle = styled.h1`
   font-size: 24px;
   margin-bottom: 5px;
-  color: #13b0f5;
+  color: #9328ff;
+  @media screen and (min-width: 768px) {
+    font-size: 36px;
+  }
 `;
-
-
 
 const MyStack = () => {
   return (
     <StackContainer id="stack">
-      <StackTitle>My Stack</StackTitle>
-      <h3 style={{display: "flex", flexWrap: "wrap", width: "225px" }}>
-        <i>Technologies I’ve been working with recently</i>
-      </h3>
+      <StackTitle>Stack</StackTitle>
       <StackList>
-        <StackItem>
+        <li>
           <img src={htmlIcon} alt="html" />
-        </StackItem>
-        <StackItem>
+        </li>
+        <li>
           <img src={cssIcon} alt="css" />
-        </StackItem>
-        <StackItem>
+        </li>
+        <li>
           <img src={jsIcon} alt="scss" />
-        </StackItem>
-        <StackItem>
+        </li>
+        <li>
           <img src={scssIcon} alt="scss" />
-        </StackItem>
+        </li>
 
-        <StackItem>
+        <li>
           <img src={reactIcon} alt="scss" />
-        </StackItem>
-        <StackItem>
+        </li>
+        <li>
           <img src={gitIcon} alt="scss" />
-        </StackItem>
-        <StackItem>
+        </li>
+        <li>
           <img src={vscodeIcon} alt="scss" />
-        </StackItem>
-        <StackItem>
+        </li>
+        <li>
           <img src={githubIcon} alt="scss" />
-        </StackItem>
+        </li>
       </StackList>
     </StackContainer>
   );

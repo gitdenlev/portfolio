@@ -1,10 +1,7 @@
 import styled from "styled-components";
 import card from "../assets/img/card.png";
 import { FaLink } from "react-icons/fa";
-
-
-
-
+import { FaRegFileCode } from "react-icons/fa";
 
 const ProjectsContainer = styled.div`
   display: flex;
@@ -16,7 +13,10 @@ const ProjectsContainer = styled.div`
 const ProjectTitle = styled.h1`
   font-size: 24px;
   margin-bottom: 5px;
-  color: #13b0f5;
+  color: #9328ff;
+  @media screen and (min-width: 768px) {
+    font-size: 36px;
+  }
 `;
 
 const ProjectsList = styled.ul`
@@ -25,6 +25,19 @@ const ProjectsList = styled.ul`
   justify-content: center;
   flex-direction: column;
   gap: 30px;
+  margin-top: 20px;
+
+  @media screen and (min-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 50px;
+    grid-row-gap: 30px;
+  }
+  @media screen and (min-width: 1050px) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+  }
 `;
 
 const ProjectItem = styled.li`
@@ -35,55 +48,78 @@ const ProjectItem = styled.li`
 
 const ProjectImg = styled.img`
   border-radius: 20px 20px 0px 0px;
-  width: 300px;
+  width: 100%;
 `;
 
-const ProjectText = styled.div`
-    padding: 10px;
+const ProjectLinks = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 10px;
+  cursor: pointer;
+`;
+
+const ProjectDescription = styled.div`
+  padding: 10px;
 `;
 
 const Projects = () => {
-  const scrollTo = () => {
-    window.scrollTo(0,0);
-  }
   return (
     <ProjectsContainer>
-      <ProjectTitle>My Projects</ProjectTitle>
-      <h3>
-        <i>Things I've dev so far</i>
-      </h3>
+      <ProjectTitle>Projects</ProjectTitle>
       <ProjectsList>
         <ProjectItem>
           <ProjectImg src={card} />
-          <ProjectText>
+          <ProjectDescription>
+            <h3 style={{ marginBottom: "10px" }}>
+              In this project i development my first web-site
+            </h3>
+            <p>Tech Stack: HTML, CSS, JS</p>
+          </ProjectDescription>
+          <ProjectLinks>
             <p>
-            <FaLink /> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
-              voluptatum!
+              <FaLink /> Live Preview
             </p>
-            <button>click</button>
-          </ProjectText>
+            <p>
+              <FaRegFileCode /> View Code
+            </p>
+          </ProjectLinks>
         </ProjectItem>
         <ProjectItem>
           <ProjectImg src={card} />
-          <ProjectText>
+          <ProjectDescription>
+            <h3 style={{ marginBottom: "10px" }}>
+              In this project i development my first web-site
+            </h3>
+            <p>Tech Stack: HTML, CSS, JS</p>
+          </ProjectDescription>
+          <ProjectLinks>
             <p>
-            <FaLink /> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
-              voluptatum!
+              <FaLink /> Live Preview
             </p>
-            <button>click</button>
-          </ProjectText>
+            <p>
+              <FaRegFileCode /> View Code
+            </p>
+          </ProjectLinks>
         </ProjectItem>
         <ProjectItem>
           <ProjectImg src={card} />
-          <ProjectText>
+          <ProjectDescription>
+            <h3 style={{ marginBottom: "10px" }}>
+              In this project i development my first web-site
+            </h3>
+            <p>Tech Stack: HTML, CSS, JS</p>
+          </ProjectDescription>
+          <ProjectLinks>
             <p>
-            <FaLink /> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti,
-              voluptatum!
+              <FaLink /> Live Preview
             </p>
-            <button>click</button>
-          </ProjectText>
+            <p>
+              <FaRegFileCode /> View Code
+            </p>
+          </ProjectLinks>
         </ProjectItem>
-        <button onClick={scrollTo}>UP</button>
       </ProjectsList>
     </ProjectsContainer>
   );

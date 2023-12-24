@@ -1,5 +1,3 @@
-import { NavLink } from "react-router-dom";
-import logoImg from "../assets/svg/logo.svg";
 import styled from "styled-components";
 import RightSidebarMenu from "./RightSidebarMenu";
 
@@ -12,13 +10,14 @@ const Header = styled.header`
   top: 0;
   width: 100%;
   padding: 10px;
-  background: #13B0F5;
-  color: black;
+  background-color: #9328ff;
+  color: #191919;
 `;
 
 const Navbar = () => {
   return (
-    <Header>
+    <>
+      <Header>
       <a>
         <span><b>gitdenlev</b></span>
       </a>
@@ -26,6 +25,8 @@ const Navbar = () => {
         <RightSidebarMenu />
       </nav>
     </Header>
+    </>
+    
   );
 };
 

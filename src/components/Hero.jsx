@@ -1,7 +1,6 @@
 import styled from "styled-components";
-import user from "../assets/img/me.jpg";
-import handWave from "../assets/img/wave.png";
-
+import user from "../assets/img/me.png";
+import TypeIt from "typeit-react";
 const HeroContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -10,7 +9,9 @@ const HeroContainer = styled.div`
   padding: 30px;
   @media screen and (min-width: 767px) {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
   }
 `;
 
@@ -28,14 +29,8 @@ const Title = styled.h1`
   display: flex;
   align-items: center;
   @media screen and (min-width: 767px) {
-    margin-left: 100px;
-    font-size: 36px;
+    font-size: 34px;
   }
-`;
-
-const Span = styled.span`
-  margin-left: 5px;
-  color:  rgba(0, 192, 253, 1);
 `;
 
 const Description = styled.p`
@@ -48,14 +43,13 @@ const Hero = () => {
       <HeroImg src={user} alt="me" />
       <HeroTitle>
         <Title>
-          Hi, my name is <Span>Denys</Span>
+          Hi, my name is Denys
         </Title>
         <Description>
-          I am a Frontend Developer, a continuous learner always eager
-          to expand my knowledge and explore new horizons. I embrace challenges
-          and thrive in environments that foster growth and development. I am
-          passionate about learning and helping others discover their own
-          potential
+          I am a Frontend Developer, a continuous learner always eager to expand
+          my knowledge and explore new horizons. I embrace challenges and thrive
+          in environments that foster growth and development. I am passionate
+          about learning and helping others discover their own potential
         </Description>
       </HeroTitle>
     </HeroContainer>
