@@ -3,6 +3,8 @@ import card from "../assets/img/card.png";
 import { FaLink } from "react-icons/fa";
 import { FaRegFileCode } from "react-icons/fa";
 
+
+
 const ProjectsContainer = styled.div`
   display: flex;
   align-items: center;

@@ -4,7 +4,6 @@ import { Spiral as Hamburger } from "hamburger-react";
 import "./RideSidebarMenu.css";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
-
 const RightSidebarMenu = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
 
@@ -33,16 +32,25 @@ const RightSidebarMenu = () => {
           <a id="contact" className="menu-item" href="/contact">
             Contact
           </a>
-          <ul style={{display: "flex", gap: "15px", alignItems: "center", justifyContent: "center"}}>
-            <li><a href="">
-            <FaGithub size={25} color="#CCC" />
-          </a></li>
-            <li><a href="">
-            <FaLinkedin size={25} color="#CCC" />
-          </a></li>
+          <ul
+            style={{
+              display: "flex",
+              gap: "15px",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            <li>
+              <a href="">
+                <FaGithub size={25} color="#CCC" />
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <FaLinkedin size={25} color="#CCC" />
+              </a>
+            </li>
           </ul>
-          
-          
         </Menu>
       </div>
     </>

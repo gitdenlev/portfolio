@@ -19,7 +19,8 @@
     "react-router-dom": "^6.21.0",
     "sass": "^1.69.5",
     "styled-components": "^6.1.2",
-    "typeit-react": "^2.7.0"
+    "typeit-react": "^2.7.0",
+    "zustand": "^4.4.7"
   },
   "devDependencies": {
     "@types/react": "^18.2.43",
