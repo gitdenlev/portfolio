@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import user from "../assets/img/me.png";
 import TypeIt from "typeit-react";
+
+
 const HeroContainer = styled.div`
   display: flex;
   flex-direction: column;
