@@ -5,6 +5,7 @@ import Projects from './components/Projects';
 import Education from './components/Education';
 import Footer from './components/Footer';
 import Counter from './components/Counter';
+import Products from './components/Products';
 
 function App() {
   return (
@@ -13,9 +14,11 @@ function App() {
         <Hero />
         <MyStack />
         <Projects />
-        <Education />
+        <Footer />
+        {/* <Education /> */}
         {/* <Footer /> */}
-        <Counter />
+        {/* <Counter /> */}
+        {/* <Products /> */}
     </>
   );
 }
