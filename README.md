@@ -1,5 +1,5 @@
-# My Portfolio (React + TailwindCSS) 🪄
-Welcome to my portfolio, where I showcase my best projects and achievements. Utilizing the powerful combination of React and TailwindCSS, I've crafted this website to demonstrate my work and skills. ✨
+# My Portfolio (React + TailwindCSS) 🪄 
+# Welcome to my portfolio, where I showcase my best projects and achievements. Utilizing the powerful combination of React and TailwindCSS, I've crafted this website to demonstrate my work and skills. ✨
 # Overview
 My portfolio is the place where each project from my collection is presented in the best light. Here you'll find various projects I've developed, ranging from websites to applications. Each project reflects my attention to detail and my passion for software development. 🚀
 ## Key Features
